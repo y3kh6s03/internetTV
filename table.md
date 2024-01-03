@@ -53,16 +53,7 @@
 | ----------- | ---------- | ---- | ------- | ------ | ------- | -------------- | ----------- |
 | id          | bigint(20) |      | primary | (YES)  | 0       | YES            |             |
 | channel_id  | bigint(20) |      |         |        |         |                | channel(id) |
-| date        | date       |      |         |        |         |                |             |
-| time1       | time       |      |         |        |         |                |             |
-| time2       | time       |      |         |        |         |                |             |
-| time3       | time       |      |         |        |         |                |             |
-| time4       | time       |      |         |        |         |                |             |
-| time5       | time       |      |         |        |         |                |             |
-| time6       | time       |      |         |        |         |                |             |
+| start       | timestamp  |      |         |        |         |                |             |
+| end         | timestamp  |      |         |        |         |                |             |
 
-
-
-
-
-
+## KPI用のテーブルを考察する
