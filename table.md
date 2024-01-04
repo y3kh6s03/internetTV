@@ -34,7 +34,6 @@
 | ------------- | ------------ | ---- | ------- | ------ | ------- | -------------- | ----------------- |
 | id            | bigint(20)   |      | primary | (YES)  | 0       | YES            |                   |
 | program_id    | bigint(20)   |      |         |        |         |                | program_title(id) |
-| video_url     | varchar(200) |      |         | YES    |         |                |                   |
 | season_number | int(2)       | YES  |         |        |         |                |                   |
 | number        | int(4)       | YES  |         |        |         |                |                   |
 | description   | text         |      |         |        |         |                |                   |
