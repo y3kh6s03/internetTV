@@ -35,6 +35,7 @@ CREATE TABLE `episode` (
     `program_id` BIGINT(20) UNSIGNED NOT NULL COMMENT 'プログラムID',
     `season_number` INT(2) UNSIGNED COMMENT 'シーズン数',
     `number` INT(4) UNSIGNED COMMENT 'エピソード数',
+    `title` VARCHAR(255) NOT NULL COMMENT 'エピソードタイトル',
     `description` TEXT NOT NULL COMMENT 'エピソード情報',
     `video_time` TIME NOT NULL COMMENT 'エピソード時間',
     `release_date` DATE NOT NULL COMMENT '公開日',
@@ -50,8 +51,8 @@ CREATE TABLE `timetable` (
     `id` BIGINT(20) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'タイムテーブルID',
     `channel_id` INT(3) UNSIGNED NOT NULL COMMENT 'チャンネルID',
     `episode_id` BIGINT(20) UNSIGNED NOT NULL COMMENT 'エピソードID',
-    `start` DATE COMMENT '開始時間',
-    `end` DATE COMMENT '終了時間',
+    `start` DATETIME COMMENT '開始時間',
+    `end` DATETIME COMMENT '終了時間',
     `views` BIGINT(20) UNSIGNED NOT NULL COMMENT 'チャンネル別視聴数'
 );
 

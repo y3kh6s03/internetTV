@@ -20,16 +20,17 @@
 | description | text         |      |         |        |         |                |     |
 
 ## episode
-| culomn_name   | data type  | NULL | key     | unique | default | AUTO INCREMENT | fk          |
-| ------------- | ---------- | ---- | ------- | ------ | ------- | -------------- | ----------- |
-| id            | bigint(20) |      | primary | (YES)  | 0       | YES            |             |
-| program_id    | bigint(20) |      |         |        |         |                | program(id) |
-| season_number | int(2)     | YES  |         |        |         |                |             |
-| number        | int(4)     | YES  |         |        |         |                |             |
-| description   | text       |      |         |        |         |                |             |
-| video_time    | time       |      |         |        |         |                |             |
-| release_date  | date       |      |         |        |         |                |             |
-| views         | bigint(20) |      |         |        | 0       |                |             |
+| culomn_name   | data type    | NULL | key     | unique | default | AUTO INCREMENT | fk          |
+| ------------- | ------------ | ---- | ------- | ------ | ------- | -------------- | ----------- |
+| id            | bigint(20)   |      | primary | (YES)  | 0       | YES            |             |
+| program_id    | bigint(20)   |      |         |        |         |                | program(id) |
+| season_number | int(2)       | YES  |         |        |         |                |             |
+| number        | int(4)       | YES  |         |        |         |                |             |
+| title         | varchar(255) |      |         |        |         |                |             |
+| description   | text         |      |         |        |         |                |             |
+| video_time    | time         |      |         |        |         |                |             |
+| release_date  | date         |      |         |        |         |                |             |
+| views         | bigint(20)   |      |         |        | 0       |                |             |
 
 ## channel
 | culomn_name | data type    | NULL | key     | unique | default | AUTO INCREMENT | fk  |
@@ -43,6 +44,6 @@
 | id          | bigint(20) |      | primary | (YES)  | 0       | YES            |             |
 | channel_id  | int(3)     |      |         |        |         |                | channel(id) |
 | episode_id  | bigint(20) |      |         |        |         |                | episode(id) |
-| start       | date       |      |         |        |         |                |             |
-| end         | date       |      |         |        |         |                |             |
+| start       | datetime   |      |         |        |         |                |             |
+| end         | datetime   |      |         |        |         |                |             |
 | views       | bigint(20) |      |         |        |         |                |             |
