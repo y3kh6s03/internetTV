@@ -8,10 +8,10 @@ USE internet_tv;
 
 -- 開発ユーザーへ権限の付与
 CREATE USER
-IF NOT EXISTS 'yosuke'@'localhost'
+IF NOT EXISTS 'username'@'localhost'
 IDENTIFIED BY 'pwd';
 GRANT ALL ON internet_tv.*
-TO 'yosuke'@'localhost';
+TO 'username'@'localhost';
 
 
 CREATE TABLE `genre` (
